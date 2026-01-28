@@ -3,227 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogério Bezerra - Advocacia e Consultoria Jurídica</title>
+    <title>Rogério Bezerra | Advocacia e Inovação Jurídica</title>
+    <meta name="description" content="Rogério Bezerra: Advocacia Especializada e Consultoria em Legal Tech. OAB/AL 19.249. Inovação para advogados, segurança para clientes.">
     
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-        /* Custom styles to integrate Google Fonts and add smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f8fafc; /* light gray background */
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Merriweather', serif;
-        }
-        .card-hover-effect {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        .card-hover-effect:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        .hero-pattern {
-            background-color: #1e3a8a; /* fallback color */
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23bfdbfe' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Header Section -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold text-gray-900">Rogério Bezerra</h1>
-                <p class="text-sm text-gray-600">Advogado - OAB/AL 19.249</p>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Rogério Bezerra <span class="oab">OAB/AL 19.249 | Legal Tech</span></a>
+            <ul class="nav-links">
+                <li><a href="#advocacia">Para Você (Advocacia)</a></li>
+                <li><a href="#legaltech">Para Advogados (Inovação)</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato" class="btn-contact">Fale Comigo</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#sobre" class="text-gray-600 hover:text-blue-900 font-semibold">Sobre</a>
-                <a href="#guias" class="text-gray-600 hover:text-blue-900 font-semibold">Áreas de Atuação</a>
-                <a href="#contato" class="bg-blue-800 text-white font-bold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors">
-                    Contato
-                </a>
-            </nav>
-            <a href="#contato" class="md:hidden bg-blue-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                Contato
-            </a>
+        </div>
+    </nav>
+
+    <!-- Split Hero Section -->
+    <header class="hero-split" id="home">
+        <!-- Side L: Advocacy -->
+        <div class="hero-side hero-left">
+            <div class="hero-overlay-gradient"></div>
+            <div class="hero-content-side">
+                <p class="overline">Para Cidadãos e Empresas</p>
+                <h1>Advocacia Especializada</h1>
+                <p>Direito do Consumidor, Saúde, Bancário e Trabalhista. Defesa técnica e intransigente dos seus direitos.</p>
+                <a href="#advocacia" class="btn btn-gold">Preciso de um Advogado</a>
+            </div>
+        </div>
+
+        <!-- Side R: Technology -->
+        <div class="hero-side hero-right">
+            <div class="hero-overlay-tech"></div>
+            <div class="hero-content-side right-align">
+                <p class="overline">Para Advogados e Escritórios</p>
+                <h1>Legal Tech & I.A.</h1>
+                <p>Consultoria em Inteligência Artificial, ferramentas de automação e inovação jurídica para alavancar sua carreira.</p>
+                <a href="#legaltech" class="btn btn-cyan">Quero Inovar na Advocacia</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-pattern text-white">
-        <div class="container mx-auto px-6 py-24 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Direito ao seu alcance.</h2>
-            <p class="text-lg text-blue-200 max-w-3xl mx-auto">
-                Assessoria jurídica especializada e guias interativos para você navegar por seus direitos com clareza e segurança.
-            </p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Sobre Mim</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Advogado graduado pela Universidade Federal de Alagoas (UFAL), com Pós-graduação em Processo Civil, inscrito na OAB/AL sob o nº 19.249. Minha atuação é focada na defesa de direitos do <span class="font-semibold">Consumidor, Trabalhador, Saúde e Bancário</span>, sempre com ênfase em inovação e tecnologia.
-                </p>
-                <p class="text-gray-700 leading-relaxed">
-                    Como <span class="font-semibold">Membro da Comissão de Inovação da OAB/AL</span>, dedico-me a desenvolver soluções em Legal Tech para tornar o direito mais acessível e eficiente. Minha missão é oferecer orientação clara e defender seus interesses com a máxima diligência, combinando conhecimento jurídico sólido com as ferramentas tecnológicas mais avançadas.
-                </p>
+    <!-- About Section (Unified) -->
+    <section id="sobre" class="section about-unified">
+        <div class="container about-container">
+            <div class="about-image reveal">
+                <!-- Placeholder Image - User TO UPDATE -->
+                <div class="image-frame-dual">
+                    <img src="assets/img/rogerio_sitting.jpg" alt="Rogério Bezerra" id="profile-img">
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Differentiators Section -->
-    <section id="diferenciais" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Meus Diferenciais</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-                <!-- Item 1: Tech -->
-                <div class="p-6">
-                    <div class="text-blue-800 mb-4 inline-block">
-                        <i class="fa-solid fa-microchip text-5xl"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Tecnologia e Inovação</h3>
-                    <p class="text-gray-600">Uso de ferramentas de Legal Tech para otimizar processos, garantir agilidade e precisão na sua defesa.</p>
-                </div>
-                <!-- Item 2: Personalized Service -->
-                <div class="p-6">
-                    <div class="text-blue-800 mb-4 inline-block">
-                        <i class="fa-solid fa-handshake-angle text-5xl"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Atendimento Personalizado</h3>
-                    <p class="text-gray-600">Cada caso é único. Ofereço uma análise detalhada e soluções estratégicas focadas nos seus objetivos.</p>
-                </div>
-                <!-- Item 3: Clarity -->
-                <div class="p-6">
-                    <div class="text-blue-800 mb-4 inline-block">
-                        <i class="fa-solid fa-comments text-5xl"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Comunicação Clara</h3>
-                    <p class="text-gray-600">Tradução do "juridiquês" para uma linguagem que você entende, garantindo transparência em todas as etapas.</p>
-                </div>
+            <div class="about-text reveal-right">
+                <p class="tagline">Tradição & Inovação</p>
+                <h2>Rogério Bezerra</h2>
+                <div class="divider-dual"></div>
+                <p>Sou advogado (OAB/AL 19.249) e Entusiasta da Tecnologia. Graduado pela UFAL e especialista em Processo Civil, minha carreira é marcada por dois pilares: a <strong>defesa técnica jurídica</strong> e a <strong>inovação tecnológica</strong>.</p>
+                <p>Como membro da <strong>Comissão de Inovação da OAB/AL</strong>, crio pontes entre o Direito e o futuro. Seja defendendo um cliente contra um plano de saúde ou ensinando um escritório a usar IA, meu compromisso é com a <strong>excelência</strong>.</p>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Guides Section -->
-    <section id="guias" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Áreas de Atuação e Guias Práticos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <!-- Cards dos Guias -->
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                        <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-red-100 mr-4"><i class="fa-solid fa-heart-pulse text-2xl text-red-600"></i></div><h3 class="font-bold text-xl text-gray-900">Direito da Saúde</h3></div>
-                        <p class="text-gray-600 mb-6">Garantias em planos de saúde, SUS e tratamentos.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Guia-Interativo-de-Direitos-da-Sa-de/" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
+    <!-- PILLAR 1: ADVOCACIA (Dark Blue Theme) -->
+    <section id="advocacia" class="section pillar-advocacia">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pillar-label">Atuação Jurídica</span>
+                <h2>Defesa de Direitos</h2>
+                <p>Acesse nossos guias especializados e entenda seus direitos.</p>
+            </div>
+            
+            <div class="grid-container">
+                <!-- Card 1: Saúde -->
+                <a href="https://sbfrogerio.github.io/Guia-Interativo-de-Direitos-da-Sa-de/" target="_blank" class="card card-advocacia reveal">
+                    <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Direito da Saúde</h3>
+                    <p>Planos de saúde, SUS, negativas de cobertura.</p>
+                    <span class="link-text">Ver Guia <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Card 2: Consumidor -->
+                <a href="https://sbfrogerio.github.io/Guia-Interativo-de-Direitos-do-Consumidor/" target="_blank" class="card card-advocacia reveal">
+                    <div class="card-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h3>Consumidor</h3>
+                    <p>Produtos com defeito, propaganda enganosa.</p>
+                    <span class="link-text">Ver Guia <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Card 3: Bancário -->
+                <a href="https://sbfrogerio.github.io/Seus-Direitos-Contra-Abusos-Banc-rios/" target="_blank" class="card card-advocacia reveal">
+                    <div class="card-icon"><i class="fas fa-landmark"></i></div>
+                    <h3>Bancário</h3>
+                    <p>Juros abusivos, revisional e taxas indevidas.</p>
+                    <span class="link-text">Ver Guia <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                 <!-- Card: Trabalhista -->
+                <a href="https://sbfrogerio.github.io/Guia-Interativo-de-Direitos-Trabalhistas/" target="_blank" class="card card-advocacia reveal">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Trabalhista</h3>
+                    <p>Rescisão, horas extras e direitos do trabalhador.</p>
+                    <span class="link-text">Ver Guia <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+            
+            <div class="cta-center reveal">
+                <a href="https://wa.me/5582987673811" class="btn btn-gold block-btn"><i class="fab fa-whatsapp"></i> Agendar Consulta Jurídica</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILLAR 2: LEGAL TECH (Tech/Dark Theme) -->
+    <section id="legaltech" class="section pillar-tech">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pillar-label tech">Inovação Para Advogados</span>
+                <h2>Soluções em Legal Tech</h2>
+                <p>Consultoria e ferramentas de IA para modernizar sua prática jurídica.</p>
+            </div>
+
+            <!-- Featured: Consultoria -->
+            <div class="featured-tool reveal">
+                <div class="tool-content">
+                    <h3>Consultoria: Transforme sua Rotina</h3>
+                    <p>Aprenda a aplicar inteligência artificial com ética e segurança. Ganhe tempo, automatize o atendimento e otimize suas peças processuais.</p>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check-circle"></i> IA com Responsabilidade & Ética</li>
+                        <li><i class="fas fa-check-circle"></i> Atendimento Automatizado</li>
+                        <li><i class="fas fa-check-circle"></i> Fim do Retrabalho Operacional</li>
+                    </ul>
+                    <a href="https://sbfrogerio.github.io/Transforme-sua-Rotina-Jur-dica-com-Legal-Tech/" target="_blank" class="btn btn-cyan small-btn">Conhecer Consultoria</a>
                 </div>
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                        <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-sky-100 mr-4"><i class="fa-solid fa-plane-departure text-2xl text-sky-600"></i></div><h3 class="font-bold text-xl text-gray-900">Passageiro Aéreo</h3></div>
-                        <p class="text-gray-600 mb-6">Direitos em atrasos, cancelamentos e bagagens.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Guia-Interativo-Direitos-do-Passageiro-Aereo/" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
+                <div class="tool-image">
+                    <i class="fas fa-robot big-icon"></i>
                 </div>
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                       <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-amber-100 mr-4"><i class="fa-solid fa-landmark text-2xl text-amber-600"></i></div><h3 class="font-bold text-xl text-gray-900">Direito Bancário</h3></div>
-                        <p class="text-gray-600 mb-6">Proteção contra juros abusivos e taxas indevidas.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Seus-Direitos-Contra-Abusos-Banc-rios/" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                        <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-green-100 mr-4"><i class="fa-solid fa-cart-shopping text-2xl text-green-600"></i></div><h3 class="font-bold text-xl text-gray-900">Direito do Consumidor</h3></div>
-                        <p class="text-gray-600 mb-6">Ações em casos de produtos com defeito e mais.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Guia-Interativo-de-Direitos-do-Consumidor/" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                        <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-gray-200 mr-4"><i class="fa-solid fa-briefcase text-2xl text-gray-700"></i></div><h3 class="font-bold text-xl text-gray-900">Direito Trabalhista</h3></div>
-                        <p class="text-gray-600 mb-6">Garantias sobre férias, 13º, FGTS e rescisão.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Guia-Interativo-de-Direitos-Trabalhistas/" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                        <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-indigo-100 mr-4"><i class="fa-solid fa-people-roof text-2xl text-indigo-600"></i></div><h3 class="font-bold text-xl text-gray-900">Direito Previdenciário</h3></div>
-                        <p class="text-gray-600 mb-6">Regras para aposentadoria, pensões e auxílios.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Seu-direito-previdenci-rio-decifrado-e-garantido./" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                        <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-teal-100 mr-4"><i class="fa-solid fa-percent text-2xl text-teal-600"></i></div><h3 class="font-bold text-xl text-gray-900">Recuperação Tributária</h3></div>
-                        <p class="text-gray-600 mb-6">Guia avançado para empresas sobre recuperação de créditos.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Guia-Avan-ado-de-Recupera-o-Tribut-ria/" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
-                </div>
-                <!-- NOVO GUIA ADICIONADO -->
-                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
-                    <div class="p-6 flex-grow">
-                        <div class="flex items-center mb-4"><div class="p-3 rounded-full bg-cyan-100 mr-4"><i class="fa-solid fa-file-invoice-dollar text-2xl text-cyan-600"></i></div><h3 class="font-bold text-xl text-gray-900">Ação Revisional</h3></div>
-                        <p class="text-gray-600 mb-6">Revise contratos de financiamento e reduza juros abusivos.</p>
-                    </div>
-                    <a href="https://sbfrogerio.github.io/Guia-Interativo-de-A-o-Revisional/" target="_blank" class="block bg-gray-200 text-center font-semibold text-blue-800 p-4 hover:bg-gray-300 transition-colors">Acessar Guia</a>
-                </div>
+            </div>
+            
+            <!-- Tools Grid -->
+            <h3 class="subsection-title reveal">Ferramentas Exclusivas</h3>
+            <div class="grid-container">
+                <!-- JurisConsulto -->
+                <a href="https://sbfrogerio.github.io/JurisConsulto/" target="_blank" class="card card-tech reveal">
+                    <div class="card-icon tech"><i class="fas fa-gavel"></i></div>
+                    <h3>JurisConsulto Digital</h3>
+                    <p>Relatórios de jurisprudência estratégica com análise de risco.</p>
+                    <span class="link-text tech">Acessar Ferramenta <i class="fas fa-code-branch"></i></span>
+                </a>
+
+                <!-- JurisLab -->
+                <a href="https://sbfrogerio.github.io/JurisLab-te-ensinando-Direito-com-I.A./" target="_blank" class="card card-tech reveal">
+                    <div class="card-icon tech"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>JurisLab I.A.</h3>
+                    <p>Trilhas inteligentes, quizzes e leitura assistida de julgados.</p>
+                    <span class="link-text tech">Estudar Agora <i class="fas fa-code-branch"></i></span>
+                </a>
+
+                <!-- Assistente Processual -->
+                <a href="https://sbfrogerio.github.io/Assistente-de-Intelig-ncia-Processual-/" target="_blank" class="card card-tech reveal">
+                    <div class="card-icon tech"><i class="fas fa-file-contract"></i></div>
+                    <h3>Assistente Processual</h3>
+                    <p>Automação de peças, gestão de prazos e resumo de processos.</p>
+                    <span class="link-text tech">Conhecer Assistente <i class="fas fa-code-branch"></i></span>
+                </a>
+
+                <!-- Diagnóstico Contratual -->
+                <a href="https://sbfrogerio.github.io/analise-de-abusividade-contratual/" target="_blank" class="card card-tech reveal">
+                    <div class="card-icon tech"><i class="fas fa-search-dollar"></i></div>
+                    <h3>Diagnóstico Contratual</h3>
+                    <p>Ferramenta de análise preliminar de abusividade em contratos.</p>
+                    <span class="link-text tech">Usar Ferramenta <i class="fas fa-code-branch"></i></span>
+                </a>
+            </div>
+
+            <div class="cta-center reveal">
+                 <a href="https://chatgpt.com/g/g-68be8413aaa48191b7a21224e265491b-arquiteto-de-prompts-lite" target="_blank" class="btn btn-outline-cyan"><i class="fas fa-microchip"></i> Acessar GPT Arquiteto de Prompts</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contato" class="bg-blue-900 text-white py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-8">Precisa de Ajuda? Fale Comigo.</h2>
-            <p class="max-w-2xl mx-auto mb-10 text-blue-200">Estou à disposição para analisar seu caso e oferecer a melhor estratégia jurídica. Escolha o melhor canal para você.</p>
-            
-            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <a href="https://wa.me/5582987673811" target="_blank" class="bg-white text-blue-900 font-bold py-3 px-6 rounded-lg flex items-center space-x-3 hover:bg-gray-200 transition-transform hover:scale-105 shadow-lg">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    <span>WhatsApp 1</span>
-                </a>
-                 <a href="https://wa.me/5582981162313" target="_blank" class="bg-white text-blue-900 font-bold py-3 px-6 rounded-lg flex items-center space-x-3 hover:bg-gray-200 transition-transform hover:scale-105 shadow-lg">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    <span>WhatsApp 2</span>
-                </a>
-                <a href="mailto:rogeriobezerra19249@gmail.com" class="bg-white text-blue-900 font-bold py-3 px-6 rounded-lg flex items-center space-x-3 hover:bg-gray-200 transition-transform hover:scale-105 shadow-lg">
-                    <i class="fa-regular fa-envelope text-2xl"></i>
-                    <span>E-mail</span>
-                </a>
-                <a href="https://instagram.com/rogeriosbf" target="_blank" class="bg-white text-blue-900 font-bold py-3 px-6 rounded-lg flex items-center space-x-3 hover:bg-gray-200 transition-transform hover:scale-105 shadow-lg">
-                    <i class="fa-brands fa-instagram text-2xl"></i>
-                    <span>Instagram</span>
-                </a>
+    <section id="contato" class="section contact">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- New Image Column -->
+                <div class="contact-image reveal">
+                    <img src="assets/img/rogerio_standing.jpg" alt="Rogério Bezerra">
+                </div>
+
+                <!-- Existing Contact Box -->
+                <div class="contact-box reveal-right">
+                    <h2>Vamos Conversar?</h2>
+                    <p>Estou à disposição para analisar seu caso e oferecer a melhor estratégia.</p>
+                    
+                    <div class="contact-split">
+                        <!-- Client Contact -->
+                        <div class="contact-col">
+                            <h3><i class="fas fa-user-shield"></i> Para Clientes</h3>
+                            <a href="https://wa.me/5582987673811" target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i> Falar com Advogado
+                            </a>
+                            <a href="mailto:rogeriobezerra19249@gmail.com" class="contact-btn email">
+                                <i class="fas fa-envelope"></i> Enviar E-mail
+                            </a>
+                        </div>
+    
+                        <div class="vertical-line"></div>
+    
+                        <!-- Lawyer Contact -->
+                        <div class="contact-col">
+                             <h3><i class="fas fa-laptop-code"></i> Para Advogados</h3>
+                            <a href="https://wa.me/5582981162313" target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i> Consultoria Legal Tech
+                            </a>
+                             <a href="https://www.linkedin.com/in/rog%C3%A9rio-bezerra-95b434369/" target="_blank" class="contact-btn linkedin">
+                                <i class="fab fa-linkedin"></i> Conectar no LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="font-semibold text-lg text-white">Rogério Bezerra - Advocacia e Consultoria</p>
-            <p class="mt-2">OAB/AL 19.249</p>
-            <p class="text-sm mt-4">&copy; 2024. Todos os direitos reservados.</p>
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Rogério Bezerra - OAB/AL 19.249. Todos os direitos reservados.</p>
+            <p class="disclaimer">Advocacia | Consultoria Legal Tech | Inovação Jurídica</p>
         </div>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
